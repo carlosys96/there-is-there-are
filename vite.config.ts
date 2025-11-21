@@ -7,7 +7,7 @@ export default defineConfig(({ mode }) => {
   
   return {
     plugins: [react()],
-    // Base relativa para que funcione en cualquier subcarpeta de GitHub Pages
+    // IMPORTANTE: base './' asegura que los assets carguen bien en subcarpetas de GitHub Pages
     base: './', 
     define: {
       // Esto permite que process.env.API_KEY funcione en el navegador
